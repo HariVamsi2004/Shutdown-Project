@@ -4,7 +4,7 @@ from os import *
 from PIL import Image,ImageTk 
 root=Tk()
 root.geometry("850x700")
-imag1e=PhotoImage(file="c:\\Users\\haris\\Desktop\\New folder\\switch.png")
+imag1e=PhotoImage(file="switch.png")
 root.iconphoto(False,imag1e)
 root.config(bg="crimson")
 root.title("Shutdown Options")
@@ -207,19 +207,19 @@ def Extra_Info():
 vamsi=Frame(root,bg="crimson");
 vamsi.pack(padx=40,pady=100)
 
-imag1e=ImageTk.PhotoImage(Image.open("c:\\Users\\haris\\Desktop\\New folder\\shut.png"))
+imag1e=ImageTk.PhotoImage(Image.open("shut.png"))
 kh=Button(vamsi,text="Shutdown",font="cosmic 10 italic",image=imag1e,compound=TOP,padx=70,pady=60,command=shut_down);
 kh.grid(row=0,padx=30)
 
-imag2e=ImageTk.PhotoImage(Image.open("c:\\Users\\haris\\Desktop\\New folder\\restart.png"))
+imag2e=ImageTk.PhotoImage(Image.open("restart.png"))
 kh1=Button(vamsi,text="Restart",font="cosmic 10 italic",image=imag2e,compound=TOP,padx=75,pady=60,command=shut_down);
 kh1.grid(row=0,column=1,padx=40)
 
-imag3e=ImageTk.PhotoImage(Image.open("c:\\Users\\haris\\Desktop\\New folder\\other.png"))
+imag3e=ImageTk.PhotoImage(Image.open("other.png"))
 kh2=Button(vamsi,text="Other option",font="cosmic 10 italic",image=imag3e,compound=TOP,padx=62,pady=60,command=all_option);
 kh2.grid(row=1,column=0,pady=40)
 
-imag4e=ImageTk.PhotoImage(Image.open("c:\\Users\\haris\\Desktop\\New folder\\help.png"))
+imag4e=ImageTk.PhotoImage(Image.open("help.png"))
 kh3=Button(vamsi,text="Help",font="cosmic 10 italic",image=imag4e,compound=TOP,padx=85,pady=60,command=Extra_Info);
 kh3.grid(row=1,column=1,pady=40)
 root.mainloop()
